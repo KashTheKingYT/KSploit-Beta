@@ -64,7 +64,6 @@ local TextLabel = Instance.new("TextLabel")
 --Properties:
 
 KSploit.Name = "KSploit"
-KSploit.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
 KSploit.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 KSploit.ResetOnSpawn = false
 
@@ -684,5 +683,9 @@ TextLabel.Font = Enum.Font.SourceSans
 TextLabel.Text = "We haven't added options yet, check back later! :D"
 TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel.TextSize = 16.000
+
+--Important
+syn.protect_gui(KSploit)
+KSploit.Parent = game.CoreGui
 
 return KSploit
